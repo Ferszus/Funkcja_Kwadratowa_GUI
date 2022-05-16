@@ -1,16 +1,17 @@
 <?php
 $x = -40;
 while ($x <= 40) {
+    $iks = $x + 50;
     $y = (pow($x, 2) + $_POST["b"] * $x + $_POST["c"]) * -1 + 50;
     // $a = pow($x, 2);
     // $b = $x;
     // $c = $_POST['c'];
     // $y = (($a + $b + $c) * - 1) + 50;
-    $iks = $x + 50;
+
     if ($y >= 0 && $y <= 100) {
-        echo "<p class='point' style='left:" . $iks . "%; top: " . $y . "%;'></p>";
+        echo "<p class='point' style='left:" . $iks . "vw; top: " . $y . "vh;'></p>";
     }
-    $x += 0.001;
+    $x += 0.08;
 }
 echo "</div>";
 $x = $_POST["a"];
@@ -23,7 +24,7 @@ $fx = $a + $b + $c;
 $delta = pow($b, 2) - 4 * $a * $c;
 $q = ($delta * -1) / (4 * $a);
 $p = ($b * -1) / (2 * $a);
-echo "<p style='position: fixed; top: 1px;'>f(x) = " . $a . "x<sup>2</sup> + " . $b . "x + " . $c . "<br>Δ = " . $delta . "<br>√Δ = " . sqrt($delta) . " <br> p = ", $p . "<br>q = ", $q . "<br>";
+echo "<p class='info'>f(x) = " . $a . "x<sup style='font-size: 1rem;'>2</sup> + " . $b . "x + " . $c . "<br>Δ = " . $delta . "<br> p = ", $p . "<br>q = ", $q . "<br>";
 if ($delta > 0) {
     $x1 = round(($b * -1 - round(sqrt($delta), 2)) / (2 * $a), 2);
     $x2 = round(($b * -1 + round(sqrt($delta), 2)) / (2 * $a), 2);

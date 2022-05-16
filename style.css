@@ -1,54 +1,81 @@
 * {
-  margin: 0px;
-  color: yellow;
-  font-size: 2rem;
+    margin: 0px;
+    color: yellow;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-  background-color: #333;
-  height: 100%;
+    background-color: #333;
+    height: 100%;
 }
 #kratki {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  align-content: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .a {
-  position: fixed;
-  top: 10px;
-  right: 240px;
-  font-size: 1rem;
-  background-color: grey;
-  width: 100px;
+    font-size: 1rem;
+    background-color: #222;
+    width: 100px;
 }
 .b {
-  position: fixed;
-  top: 10px;
-  right: 120px;
-  font-size: 1rem;
-  background-color: grey;
-  width: 100px;
+    font-size: 1rem;
+    background-color: #222;
+    width: 100px;
 }
 .c {
-  position: fixed;
-  top: 10px;
-  right: 1px;
-  font-size: 1rem;
-  background-color: grey;
-  width: 100px;
+    font-size: 1rem;
+    background-color: #222;
+    width: 100px;
 }
 .przysick {
-  background-color: rgb(71, 71, 71);
-  border: 3px while solid;
+    background-color: #2700b0;
+}
+input {
+    border: 0;
+    border-radius: 7px;
+    padding: 6px;
+    margin: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
 }
 .point {
-  position: fixed;
-  background-color: blue;
-  width: 3px;
-  height: 3px;
+    position: fixed;
+    background-color: blue;
+    width: 3px;
+    height: 3px;
+}
+form {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.info {
+    position: absolute;
+    padding: 20px;
+    margin: 35px;
+    border-radius: 10px;
+    background-color: #2700b0;
+    left: 0;
+    bottom: 0;
+    font-size: 1rem;
 }
