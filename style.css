@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  color: yellow;
+  font-size: 2rem;
+}
+body {
+  background-color: #333;
+  height: 100%;
+}
+#kratki {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.a {
+  position: fixed;
+  top: 10px;
+  right: 240px;
+  font-size: 1rem;
+  background-color: grey;
+  width: 100px;
+}
+.b {
+  position: fixed;
+  top: 10px;
+  right: 120px;
+  font-size: 1rem;
+  background-color: grey;
+  width: 100px;
+}
+.c {
+  position: fixed;
+  top: 10px;
+  right: 1px;
+  font-size: 1rem;
+  background-color: grey;
+  width: 100px;
+}
+.przysick {
+  background-color: rgb(71, 71, 71);
+  border: 3px while solid;
+}
+.point {
+  position: fixed;
+  background-color: blue;
+  width: 3px;
+  height: 3px;
+}
